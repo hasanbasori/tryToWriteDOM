@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <h1>
+        Calculate Grade Program
+    </h1>
+    <h2 id="name" ></h2>
+    <h3 id="result"></h3>
+    <p id="qout"></p>
+    <!-- <button onclick="clickRefresh" >try again</button> -->
+    <button onclick= "location.reload()">Try Again</button>
+    <script>
+        let names = prompt("plese Enter your name")
+        document.getElementById("name").innerHTML = "Hello! and Welcome" + " " + names;
+    </script>
+    <script>
+
+        let score = prompt("Please , Enter your Score");
+        if (score <= 0 || score > 100) {
+            document.getElementById("result").innerHTML = "Invalid score, Please try again ,The score calculation is from 1 - 100 only."
+            alert("Invalid score, Please try again")
+            alert("The score calculation is from 1 - 100 only.")
+            console.log("Invalid score, Please try again ,The score calculation is from 1 - 100 only.")
+        } else if (score >= 80) {
+            document.getElementById("result").innerHTML = "You got grade \"A\""
+            alert("You are greatest")
+            console.log("You got grade \"A\"", ",", "You are greatest")
+            document.getElementById("qout").innerHTML = "You are greatest"
+        } else if (score >= 75) {
+            document.getElementById("result").innerHTML = "You got grade \"B+\""
+            alert("You are great")
+            console.log("You got grade \"B+\"" + "," + "You are great")
+            document.getElementById("qout").innerHTML = "You are great"
+        } else if (score >= 70) {
+            document.getElementById("result").innerHTML = "You got grade \"B\""
+            alert("You are excillent")
+            console.log("You got grade \"B\"" + "," + "You are excillent")
+            document.getElementById("qout").innerHTML = "You are excillent"
+        } else if (score >= 65) {
+            document.getElementById("result").innerHTML = "You got grade \"C+\""
+            alert("You are great")
+            console.log("You get grade \"C+\"" + "," + "You are great")
+            document.getElementById("qout").innerHTML = "You are great"
+        } else if (score >= 60) {
+            document.getElementById("result").innerHTML = "You got grade \"C\""
+            alert("You are good")
+            console.log("You got grade \"C\"" + "," + "You are good")
+            document.getElementById("qout").innerHTML = "You are good"
+        } else if (score >= 55) {
+            document.getElementById("result").innerHTML = "You got grade \"D+\""
+            alert("You are good")
+            console.log("You got grade \"D+\"" + "," + "You are good")
+            document.getElementById("qout").innerHTML = "You are good"
+        } else if (score >= 50) {
+            document.getElementById("result").innerHTML = "You got grade \"D\""
+            alert("You got grade \"D\"" + "," + "Not bad but you have to improve your self more")
+            console.log("Not bad but you have to improve your self more")
+            document.getElementById("qout").innerHTML = "Not bad but you have to improve your self more"
+        } else if (score < 50) {
+            document.getElementById("result").innerHTML = "You got grade \"F\""
+            alert("don't be cry and don't give up and try again in next term")
+            console.log("You got grade \"F\"" + "," + "don't be cry and don't give up and try again in next term")
+            document.getElementById("qout").innerHTML = "don't be cry and don't give up and try again in next term"
+        }
+        else if (score !== Number) {
+            document.getElementById("result").innerHTML = "Please try again and input score in number only."
+            alert("Please try again and input score in number only.")
+            console.log("Please try again and input score in number only.")
+        }
+
+
+    </script>
+    <Script>
+      
+        // location.reload();
+    </Script>
+</body>
+
+</html>
